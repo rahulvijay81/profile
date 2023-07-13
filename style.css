@@ -1,6 +1,9 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191919;
+    font-family: 'Poppins', sans-serif;
 }
 .back{
     width: 100%;
@@ -12,34 +15,31 @@
     justify-content: center;
 }
 .bg1{
-    width: 400px;
-    height: 440px;
+    width: 350px;
+    height: 350px;
     background: transparent;
-    border-radius: 20px;
-    border: 1px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius:5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .img{
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     display: block;
-    margin: 50px auto 0;
-    background-size: cover;
-    border-radius: 100%;
-    border: solid 5px;
+    margin: 20px auto 10px;
+    border-radius: 50%;
+    border: solid 2px;
     border-color: rgba( 0, 0, 0, .2);
 }
 .name{
-    padding-top: 1rem;
+    font-size: 28px;
+    font-weight: 600;
     text-align: center;
-    font-size: 30px;
-    color: #191919;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .name2{
-    padding: 15px;
+    font-size: 14px;
     text-align: center;
-    color: #191919;
     letter-spacing: 1px;
     font-weight: 500;
 } 
@@ -54,7 +54,7 @@ a {
     align-items: center;
     justify-content: center;
     color:#191919;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration:none;
     font-size: 30px;
     width:65px;
@@ -63,5 +63,12 @@ a {
   }
   
   a:hover {
-    background-color: #e6e6e6;
+    background-color:  rgba( 0, 0, 0, .1);
+  }
+
+  @media only screen and (min-width: 375px) {
+    .bg1{
+        width: 300px;
+        height: 330px;
+    }
   }
